@@ -1,17 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>If you're not OBS, Go Away</title>
-  <script src="https://cdn.jsdelivr.net/npm/comfy.js@latest/dist/comfy.min.js"></script>
-  <style>
-    <!-- We will declare some styles here soon -->
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background: #444;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background: #555;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .main-content, .sidebar {
+            padding: 20px;
+            background: #fff;
+            margin: 10px 0;
+        }
+        .main-content {
+            flex: 3;
+        }
+        .sidebar {
+            flex: 1;
+        }
+        .row {
+            display: flex;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
 </head>
-
 <body>
-  <!-- We will write the body in just a second! -->
+    <header>
+        <h1>News Blog</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">World</a>
+        <a href="#">Politics</a>
+        <a href="#">Business</a>
+        <a href="#">Technology</a>
+        <a href="#">Sports</a>
+        <a href="#">Entertainment</a>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="main-content">
+                <h2>Latest News</h2>
+                <article>
+                    <h3>Article Title 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor at urna id bibendum.</p>
+                </article>
+                <article>
+                    <h3>Article Title 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor at urna id bibendum.</p>
+                </article>
+            </div>
+            <div class="sidebar">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor at urna id bibendum.</p>
+                <h2>Categories</h2>
+                <ul>
+                    <li><a href="#">World</a></li>
+                    <li><a href="#">Politics</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 News Blog. All rights reserved.</p>
+    </footer>
 </body>
 </html>
